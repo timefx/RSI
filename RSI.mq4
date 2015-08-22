@@ -18,11 +18,12 @@
 #property indicator_levelcolor clrSilver
 #property indicator_levelstyle STYLE_DOT
 //--- input parameters
-input int InpRSIPeriod=14; // RSI Period
+input int InpRSIPeriod=7; // RSI Period
 //--- buffers
 double ExtRSIBuffer[];
 double ExtPosBuffer[];
 double ExtNegBuffer[];
+double RSI = rsi indicator()
 //+------------------------------------------------------------------+
 //| Custom indicator initialization function                         |
 //+------------------------------------------------------------------+
